@@ -1,8 +1,12 @@
 auto/*
 *.aux
+*.fdb_latexmk
+*.log
 *.nav
 *.out
 *.pdf
 *.snm
 *.toc
 *~
+\#*
+.\#*
