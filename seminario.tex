@@ -4,7 +4,14 @@
 \usepackage[italian]{babel}
 
 \usefonttheme{professionalfonts}
-\usepackage{lxfonts}
+\usepackage{lxfonts,booktabs,siunitx}
+
+\sisetup{per-mode=symbol,
+  inter-unit-separator={}\cdot{},
+  exponent-product=\cdot,
+  output-product=\cdot,
+  separate-uncertainty=true
+}
 
 \graphicspath{{Immagini/}} % cartella in cui cercare le immagini da caricare
 
