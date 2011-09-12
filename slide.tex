@@ -17,7 +17,7 @@
   \includegraphics[width=\columnwidth]{DarkMatterPie}
 \end{frame}
 
-\section[Origine]{Origine dell'energia oscura}
+\section[Prove dell'esistenza]{Prove dell'esistenza dell'energia oscura}
 
 \begin{frame}
   \frametitle{Perché serve l'energia oscura?}
@@ -29,12 +29,28 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{Prove dell'espansione accelerata dell'Universo}
+  \frametitle{Supernove di tipo Ia}
+  \begin{columns}
+    \begin{column}{0.35\textwidth}
+      Derivano dall'esplosione di una nana bianca. Si distinguono dalle altre
+      supernove per l'assenza di idrogeno nello spettro e sono caratterizzate da
+      una tipica curva di luce che permette di misurarne la distanza.
+    \end{column}
+    \begin{column}{0.6\textwidth}
+      \includegraphics[width=\columnwidth]{fitting}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Altre prove dell'espansione accelerata dell'Universo}
   \begin{itemize}
-  \item Supernove di tipo Ia (Riess 1998 e Perlmutter 1999)
+  \item Età dell'Universo
   \item Radiazione cosmica di fondo
   \item Struttura a grande scala dell'Universo
-  \item Microlensing gravitazionale
+  \item Lensing gravitazionale
+  \item Oscillazioni acustiche barioniche
+  \item Cluster di galassie
   \end{itemize}
 \end{frame}
 
@@ -51,15 +67,9 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{Che caratteristiche ha?}
-  Indipendentemente dalle ipotesi sulla natura l'energia oscura deve avere
-  \alert{pressione negativa}. Serve per giustificare l'accelerazione
-  nell'espansione.
-\end{frame}
-
-\begin{frame}
   \frametitle[]{Equazioni fondamentali}
-  Particella di massa $m$, mezzo in espansione di massa $M = 4\pi\rho r^3/3$.
+  Particella di massa $m$, mezzo \alert{isotropo e omogeneo} in espansione di
+  massa $M = 4\pi\rho r^3/3$.
   \begin{align*}
     F &= \frac{GMm}{r^2} = \frac{4\pi G \rho r m}{3} \\
     V &= -\frac{GMm}{r} = -\frac{4\pi G \rho r^2 m}{3} \\
@@ -70,7 +80,7 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{Equazioni fondamentali}
+  \frametitle{Equazioni fondamentali (continua)}
   \begin{block}{Equazione di Friedmann}
     \begin{equation*}
       H^2 = \left( \frac{\dot{R}}{R} \right)^2 = \frac{8\pi G}{3}\rho -
@@ -94,15 +104,16 @@
 
 \begin{frame}
   \frametitle{Curvatura}
+  Dalla Relatività Generale si ha che $k$ rappresenta la curvatura.
   \begin{table}
     \centering
     \begin{tabular}{ccc}
       \toprule{}
-      Curvatura & Geometria & Universo \\
+      Valore  & Geometria  & Universo \\
       \midrule{}
-      $k < 0$ & sferica & chiuso \\
-      $k = 0$ & piana & piatto \\
-      $k > 0$ & iperbolica & aperto \\
+      $k < 0$ & sferica    & chiuso   \\
+      $k = 0$ & piana      & piatto   \\
+      $k > 0$ & iperbolica & aperto   \\
       \bottomrule{}
     \end{tabular}
   \end{table}
@@ -111,7 +122,9 @@
 \begin{frame}
   \frametitle{Costante cosmologica}
   L'equazione di Friedmann da sola \\
-  non spiega l'accelerazione nell'espansione.
+  non spiega l'accelerazione nell'espansione. \\
+  Aggiungiamo alla forza di gravità un termine \\
+  repulsivo del tipo legge di Hooke: $+\Lambda\vec{r}/3$.
   \begin{block}{Equazione di Friedmann modificata}
     \begin{equation*}
       H^2 = \frac{8\pi G}{3}\rho - \frac{kc^2}{R^2} + \frac{\Lambda}{3}
@@ -147,7 +160,7 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{Fluido cosmologico}
+  \frametitle{Fluido cosmologico (continua)}
   Per ciascuna componente del fluido si può scrivere
   \begin{block}{Equazione di stato}
     \begin{equation*}
@@ -156,7 +169,7 @@
   \end{block}
   \pause{}
   Inserendo nell'equazione dei fluidi
-  \begin{block}{Evoluzione dei fluidi}
+  \begin{block}{Evoluzione della densità}
     \begin{equation*}
       \rho \propto \frac{1}{R^{3(1+w)}}
     \end{equation*}
@@ -194,7 +207,7 @@
   La costante cosmologica ha \\
   densità costante in spazio e tempo. \\
   Se invece ammettiamo che possa variare \\
-  abbiamo $p_{\textup{Q}} = w\rho_{\textup{Q}}c^2$ \\
+  poniamo $p_{\textup{Q}} = w\rho_{\textup{Q}}c^2$ \\
   con $w \neq 1$ e $w < -1/3$ affinché \\
   la pressione negativa permetta l'espansione accelerata. \\
   In questo caso l'energia oscura si chiama \alert{quintessenza}.
@@ -209,17 +222,6 @@
     \centering
     \includegraphics[width=0.7\columnwidth]{500px-Friedmann_universes}
   \end{figure}
-\end{frame}
-
-\section{Problemi aperti}
-
-\begin{frame}
-  \frametitle{Cosa c'è ancora da scoprire?}
-  \begin{itemize}[<+->]
-  \item Qual è il valore $k$ della curvatura?
-  \item L'espansione sta realmente accelerando?
-  \item L'energia oscura è l'energia quantistica del vuoto?
-  \end{itemize}
 \end{frame}
 
 %%% Local Variables:
