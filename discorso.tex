@@ -1,0 +1,216 @@
+\documentclass[10pt,a4paper,fleqn,draft]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+
+\usepackage{amsmath,siunitx,layaureo,graphicx,hyperref}
+
+\sisetup{per-mode=symbol,
+  inter-unit-separator={}\cdot{},
+  exponent-product=\cdot,
+  output-product=\cdot,
+  separate-uncertainty=true
+}
+\DeclareSIUnit\year{yr}
+
+\newcommand{\figura}[1]{
+  \begin{figure}[h!]
+    \includegraphics[height=10pt]{Immagini/#1}
+  \end{figure}
+}
+
+\title{L'energia oscura\\(traccia della presentazione)}
+\author{Mosè Giordano}
+\date{16 settembre 2011}
+
+\begin{document}
+\maketitle
+L'energia oscura è un'ipotetica forma di energia che riempie l'Universo. Nel
+seguente grafico a torta vediamo una stima della concentrazione di energia
+oscura, materia oscura e materia ordinaria nell'Universo.
+\figura{DarkMatterPie}
+
+È stato necessario, alla fine degli scorsi anni '90, introdurre l'energia oscura
+all'interno della teoria cosmologica standard perché sono state raccolte delle
+evidenze sperimentali che mostrano che l'Universo si sta espandendo in maniera
+accelerata. Fino ad allora si sapeva che l'Universo si sta espandendo, ma si
+riteneva che lo facesse in modo costante. Vediamo in questa rappresentazione
+artistica, prodotta dalla NASA, che intorno a circa $5$ miliardi di anni fa
+l'espansione avrebbe iniziato a subire un'accelerazione.
+\figura{800px-CMB_Timeline300_no_WMAP}
+
+Alcune supernove hanno una forte riga di emissione di idrogeno nel proprio
+spettro, mentre per altre supernove questa riga è assente. Le prime sono dette
+di tipo II, le altre di tipo Ia. Si è quindi scoperto che le supernove di tipo
+II derivano dall'esplosione di una stella molto massiccia nello stadio finale
+della propria vita, quando ancora è presente una grossa nube di idrogeno nella
+loro atmosfera. Le supernove di tipo I si dividono a loro volta in Ia, Ib e
+Ic. Lo spettro delle Ia presenta, nello spettro di assorbimento, una forte riga
+di silicio ionizzato, che manca per le Ib e Ic. [Le Ib hanno una forte riga di
+assorbimento dell'elio, le Ic no. Secondo le teorie attuali, le Ib e Ic derivano
+dall'esplosione di una stella massiccia, come le II, ma a cui sono stati portati
+via (vento stellare o stella compagna) gli strati esterni prima di
+esplodere. Alle Ic è stata sottratta molta massa, quindi non ci sono più neanche
+gli strati di elio, per cui questo elemento è assente dallo spettro di
+assorbimento.] A differenza degli altri tipi di supernove, le Ia non sono state
+individuate in regioni in cui si stanno formando nuove stelle, quindi
+probabilmente non costituiscono la fase conclusiva della vita di una massiccia
+stella supergigante. Piuttosto si ritiene che le supernove Ia derivino
+dall'esplosione termonucleare di una nana bianca che forma un sistema binario,
+per esempio con una gigante rossa. Se la nana bianca sottrae massa alla sua
+compagna può a un certo punto superare il limite di Chandrasekhar e riattivare
+le reazioni nucleari che portano, in seguito, all'esplosione della
+stella. [Prima di esplodere la nana bianca era composta principalmente da
+carboni e ossigeno. Dalla reazione di fusione nucleare del carbonio deriva il
+silicio che caratterizza lo spettro delle supernove Ia. In queste stelle sono
+quasi completamente assente, invece, l'idrogeno e l'elio, per questo motivo non
+compaiono negli spettri.] Poiché tutte le supernove Ia hanno pressoché la stessa
+massa e stessa composizione chimica, si ritiene che esplodano tutte allo stesso
+modo. In particolare, avrebbero tutte la stessa curva di luce (andamento della
+luminosità assoluta in funzione del tempo trascorso dall'esplosione), con un
+picco intorno a -19.9 magnitudini assolute. Poiché esiste una relazione
+[$m-M=5\log d - 5$] che lega magnitudine assoluta [$M$, in questo caso nota],
+magnitudine apparente [$m$, misurabile nelle osservazioni] e distanza [$d$,
+incognita], misurando la magnitudine apparente del picco della curva di luce di
+una queste supernove è possibile stimare la distanza da noi di questi corpi.
+
+Due gruppi di ricerca su supernove Ia [Riess 1998, Perlmutter 1999] scoprirono,
+misurando la distanza con il metodo sopra esposto, che alcune supernove molto
+lontane apparivano più distanti di quanto si prevedesse da misure basate sul
+redshift cosmologico. Adattando i dati raccolti a un modello cosmologico
+scoprirono che per giustificare questa apparente discrepanza era necessario
+ammettere l'esistenza di una certa forma di energia che comporta
+un'accelerazione nell'espansione dell'Universo.
+\figura{fitting}
+
+Da allora sono state raccolte molte altre evidenze dell'esistenza dell'energia
+oscura con diverse tecniche, delle quali non avremo il tempo di parlare:
+\begin{itemize}
+\item età dell'Universo [si stima che le stelle più vecchie ancora in vita
+  abbiano un'età maggiore di $t_s = \SI{11}{\giga\year}$. Considerando un
+  Universo dominato solo dalla materia comune si può calcolare che questo
+  avrebbe un'età di circa $t_0 = \SI{9}{\giga\year}$, in contrasto con l'età
+  delle stelle più vecchie. Ammettendo l'esistenza dell'energia oscura si ricava
+  $t_0 = \SI{13.7}{\giga\year}$, valore compatibile con le osservazioni];
+\item radiazione cosmica di fondo;
+\item struttura a grande scala dell'Universo;
+\item lensing gravitazionale;
+\item oscillazioni acustiche barioniche;
+\item conteggio degli ammassi di galassie.
+\end{itemize}
+
+Su cosa sia realmente l'energia oscura al momento ci sono solo speculazioni. Le
+due ipotesi più valide sono quelle della costante cosmologica e della
+quintessenza. Esistono anche altre ipotesi alternative che spesso finiscono con
+il coincidere con la quintessenza oppure non sono compatibili con le
+osservazioni.
+
+La cosmologia si poggia sulla teoria della Relatività Generale. Qui ricaveremo
+le equazioni che descrivono l'energia oscura usando la meccanica classica
+newtoniana. Non è un metodo rigoroso, però i risultati a cui arriveremo sono gli
+stessi predetti in maniera più formale dalla Relatività Generale. [Peraltro con
+la riformulazione di Élie Cartan della meccanica newtoniana si può far vedere
+che la cosmologia di Newtonia è rigorosa quanto (e più generale di) quella di
+Friedmann. Vedi Frank J. Tipler, ``Rigorous Newtonian cosmology'', in American
+Journal of Physics -- October 1996 -- Volume 64, Issue 10, pp. 1311-1315. DOI:
+\url{http://dx.doi.org/10.1119/1.18398}] In particolare l'energia oscura deriva
+da un modello cosmologico che presuppone il principio cosmologico: l'Universo è
+omogeneo (uguale in ogni suo punto) e isotropo (uguale in ogni
+direzione). Chiaramente questo non è valido sempre, ma sulle grandi scale
+astronomiche (decine o centinaia di Mpc e oltre), questa ipotesi vale con ottima
+approssimazione.
+
+Consideriamo un mezzo sferico, omogeneo e isotropo in espansione che ha densità
+$\rho$, raggio $r$ e massa $M = 4\pi\rho r^3/3$. Consideriamo inoltre una
+particella di massa $m$ sulla sua superficie. Il modulo della forza
+gravitazionale che la particella risente per azione del mezzo è $F = \dots$,
+l'energia potenziale è $V = \dots$, l'energia cinetica $T = \dots$, quindi
+l'energia meccanica totale è $U = \dots$.  Poiché il mezzo si sta espandendo
+effettuiamo un cambio di coordinate: poniamo $\vec{r}(t) = R(t) \vec{x}$, in cui
+$\vec{x}$ è la coordinata di comoto (?), costante, e $R(t)$ è il fattore di
+scala che misura il tasso di espansione del mezzo. [L'ipotesi di omogeneità
+assicura che $R$ dipenda solo dal tempo.]  Riarrangiando i termini
+dell'equazione dell'energia e ponendo $kc^2 = \dots$ otteniamo l'equazione di
+Friedmann $H^2 = \dots$. Il parametro $k$ non deve dipendere da $x$ perché
+nell'equazione nessun termine dipende da $x$ e deve essere preservata
+l'omogeneità e non dipende neanche dal tempo. L'omogeneità inoltre comporta che
+$U$ è costante per una fissata particella ma cambia, al variare di $x$, come
+$x^2$. L'equazione di Friedmann non è covariante, non vale per qualsiasi cosa
+che si trovi nell'Universo, perché si basa sulla validità del principio
+cosmologico, quindi può essere applicato sulle grandi scale. Pertanto,
+l'espansione dell'Universo non significa che noi adesso ci stiamo espandendo
+perché l'espansione ha luogo solo se il moto degli oggetti è governato
+dall'effetto gravitazionale cumulativo di una distribuzione omogenea di materia
+fa di loro. Per esempio, gli atomi del nostro corpo obbediscono alle leggi della
+meccanica quantistica, la gravità è del tutto irrilevante per essi. Invece lo
+spazio che separa le galassie si sta espando portando esse con sé.
+
+Dalla prima legge della termodinamica [$dE + pdV = TdS$, si assume un'espansione
+reversibile a entropia costante $dS = 0$] si ricava l'equazione del fluido
+$\dot{\rho} + \dots$. Per determinare l'andamento di $\rho$ rispetto al tempo
+abbiamo bisogno di conoscere la pressione. Per questo motivo introdurremo una
+funzione del tipo $p \equiv p(\rho)$ che lega le due quantità.
+
+Derivando l'equazione di Friedmann rispetto al tempo e inserendo l'equazione del
+fluido si ricava anche l'equazione di accelerazione $\ddot{R}/R = \dots$. La
+materia ordinaria non esercita pressione e ha densità positiva, quindi
+$\ddot{R}<0$ e non si riesce a spiegare l'espansione dell'Universo. Lo stesso
+vale se $p>0$. Queste equazioni non sono tutte fra loro indipendenti, avendone
+due si può sempre ricavare la terza.
+
+Con il metodo da noi sviluppato non è evidente, ma con la teoria della
+Relatività Generale si può far vedere che il parametro $k$ che abbiamo
+introdotto descrive la curvatura dell'Universo. Senza energia oscura:
+\begin{itemize}
+\item Universo chiuso: collasserà su se stesso (Big Crunch);
+\item Universo piatto: continuerà a espandesi indefinitamente;
+\item Universo aperto: esploderà (Big Rip).
+\end{itemize}
+
+Per giustificare l'accelerazione nell'espansione dell'Universo modifichiamo la
+forza di gravità aggiungendo un termine repulsivo del tipo forza di Hooke:
+$\Lambda \vec{r}/3$. [Il potenziale di questo termine va come $x^2$, come
+richiesto dall'ipotesi di omogeneità.] Ripetendo gli stessi calcoli di prima si
+ottiene l'equazione di Friedmann modificata $H^2 = \dots$. La costante
+cosmologica $\Lambda$ fu introdotta già da Einstein nel 1917 per provare a
+spiegare un Universo statico. Dovette però ritirarla quando si scoprì che
+l'Universo non era statico ma è in espansione, ammettendo di aver commesso il
+più grosso errore della sua vita.
+
+Possiamo immaginare l'Universo come riempito da un fluido. [Non è un'ipotesi
+solo semplificatrice: il moto delle stelle (?) è descritto dalla meccanica
+statistica, così come succede per il moto dei fluidi.] Questo fluido è composto
+da (almeno) tre componente e ha densità $\rho = \dots$ , con $\rho_m = \dots$
+(barioni (impropriamente): tutto ciò che fa parte del modello standard delle
+particelle; materia oscura: ciò che non fa parte del modello standard (anche se
+forse esiste materia oscura barionica). La materia è tutto ciò che tipicamente
+si muove non relativisticamente, l'energia cinetica è minore dell'energia a
+riposo, quindi non ha pressione (polvere)), $\rho_r = \dots$ (radiazione: cioè
+che si muove alla velocità della luce o quasi, quindi particelle prive di massa
+(fotoni) o quasi (neutrini, questi inoltre interagiscono scarsamente con la
+materia)) e $\rho_\Lambda = \dots$ (energia oscura).
+
+Come abbiamo già detto, per risolvere $\rho$ in funzione del tempo è necessario
+introdurre una relazione fra pressione e densità. Questa è data dall'equazione
+di stato che possiamo scrivere genericamente come $p_i = \dots$. Inserendo
+questa relazione nell'equazione dei fluidi si trova che per ciascuna componente
+abbiamo $\rho_i = \dots$.
+
+Per la materia abbiamo già detto che $w = 0$, quindi $\rho \propto \dots$ come è
+normale attendersi per la materia comune. Per la radiazione si può dimostrare
+che si ha $w = 1/3$, quindi $\rho \propto \dots$. Infine, ponendo $w=-1$ per
+l'energia oscura abbiamo $\rho \text{ costante}$. La figura mostra, allo stato
+delle conoscenze attuali, l'andamento delle densità delle tre componenti nel
+corso del tempo a partire dal Big Bang. Inizialmente l'Universo era dominato
+dalla radiazione, ma dopo relativamente poco tempo la materia ha avuto il
+sopravvento (perché $\rho_m \propto 1/R^3$, $\rho_r \propto 1/R^4$), ma da circa
+5 miliardi di anni la densità di materia è inferiore a quella dell'energia
+oscura e quindi è iniziata l'accelerazione nell'espansione dell'Universo.
+\figura{evoluzione_densita}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
