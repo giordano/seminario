@@ -34,7 +34,7 @@
     \begin{column}{0.35\textwidth}
       Derivano dall'esplosione di una nana bianca. Si distinguono dalle altre
       supernove per l'assenza di idrogeno nello spettro e sono caratterizzate da
-      una tipica curva di luce che permette di misurarne la distanza.
+      una peculiare curva di luce che permette di stimarne la distanza.
     \end{column}
     \begin{column}{0.6\textwidth}
       \includegraphics[width=\columnwidth]{fitting}
@@ -50,7 +50,7 @@
   \item Struttura a grande scala dell'Universo
   \item Lensing gravitazionale
   \item Oscillazioni acustiche barioniche
-  \item Cluster di galassie
+  \item Conteggio dei cluster di galassie
   \end{itemize}
 \end{frame}
 
@@ -143,10 +143,8 @@
   \pause{}
   \begin{block}{Componenti del fluido}
     \begin{equation*}
-      \rho_{\textup{m}}(t) =
-      \underbrace{\rho_{\textup{stelle}}(t) +
-        \rho_{\textup{nucleosintesi}}(t)}_{\rho_{\textup{barioni}(t)}} +
-      \rho_{\textup{materia oscura}}(t)
+      \rho_{\textup{m}}(t) = \rho_{\textup{barioni}(t)} + \rho_{\textup{materia
+          oscura}}(t)
     \end{equation*}
     \pause{}
     \begin{equation*}
@@ -174,42 +172,65 @@
       \rho \propto \frac{1}{R^{3(1+w)}}
     \end{equation*}
   \end{block}
-  \pause{}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Evoluzione delle densità}
   Materia: $w = 0 \implies \rho \propto 1/R^3$ \\
-  \pause{}
   Radiazione: $w = 1/3 \implies \rho \propto 1/R^4$ \\
-  \pause{}
   Energia oscura (vuoto): $w = -1 \implies \rho \text{ costante}$
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.5\columnwidth]{evoluzione_densita}
+  \end{figure}
 \end{frame}
 
 \begin{frame}
   \frametitle{Parametro di densità}
-  \begin{block}{Parametro di densità}
+  Ponendo $k=0$ nell'equazione di Friedmann abbiamo $\rho_{\textup{crit}} =
+  3H^2/(8\pi G)$.
+  \begin{block}{Parametri di densità dei fluidi}
     \begin{equation*}
       \Omega_i(t) = \frac{\rho_i(t)}{\rho_{\textup{crit}}} = \frac{8\pi
         G}{3H^2(t)}\rho_i(t)
     \end{equation*}
   \end{block}
-  \pause{}
-  Sperimentalmente si è trovato
-  \begin{equation*}
-    \Omega_{\textup{m},0} \approx \num{0.3} \qquad \Omega_{\textup{r},0} \approx
-    \num{5e-5} \qquad \Omega_\Lambda \approx \num{0.7}
-  \end{equation*}
-  L'energia oscura domina l'Universo!
+  \begin{block}{Parametro di densità della curvatura}
+    \begin{equation*}
+      \Omega_k(t) = -\frac{c^2k}{H^2(t)R^2(t)} = 1 - \sum_i \Omega_i.
+    \end{equation*}
+  \end{block}
+  Quindi: $\Omega + \Omega_k \equiv \Omega_{\textup{m}}(t) +
+  \Omega_{\textup{r}}(t) + \Omega_\Lambda(t) + \Omega_k(t) = 1$.
 \end{frame}
 
-% TODO: grafico (con Tikz è meglio)q 7.1, pag 54 del Liddle. Mostrare dove ci
-% troviamo noi oggi (\Omega = 1 !)
+\begin{frame}
+  \frametitle{Valori sperimentali dei parametri di densità}
+  \begin{columns}
+    \begin{column}{0.5\columnwidth}
+      \includegraphics[width=\columnwidth]{confcmbclust}
+    \end{column}
+    \begin{column}{0.4\columnwidth}
+      Sperimentalmente:
+      \begin{align*}
+        \Omega_{\textup{m},0} &\approx \num{0.3} \\
+        \Omega_{\textup{r},0} &\approx \num{5e-5} \\
+        \Omega_{\Lambda,0} &\approx \num{0.7}
+      \end{align*}
+      L'energia oscura domina l'Universo! \\
+      Inoltre $\Omega_{k,0} \approx 0$: l'Universo è approssimativamente piatto.
+    \end{column}
+  \end{columns}
+\end{frame}
 
 \begin{frame}
   \frametitle{Quintessenza}
   La costante cosmologica ha \\
   densità costante in spazio e tempo. \\
   Se invece ammettiamo che possa variare \\
-  poniamo $p_{\textup{Q}} = w\rho_{\textup{Q}}c^2$ \\
-  con $w \neq 1$ e $w < -1/3$ affinché \\
-  la pressione negativa permetta l'espansione accelerata. \\
+  poniamo $p_{\textup{Q}} = w_{\textup{Q}}\rho_{\textup{Q}}c^2$ \\
+  con $w_{\textup{Q}} \neq 1$ e $w_{\textup{Q}} \lesssim -1/3$ affinché \\
+  si abbia l'espansione accelerata (cioè $\ddot{R}>0$). \\
   In questo caso l'energia oscura si chiama \alert{quintessenza}.
 \end{frame}
 
