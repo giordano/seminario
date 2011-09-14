@@ -1,9 +1,9 @@
-\documentclass[10pt,a4paper,fleqn,draft]{article}
+\documentclass[12pt,a4paper,fleqn,draft]{article}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[italian]{babel}
 
-\usepackage{amsmath,siunitx,layaureo,graphicx,hyperref}
+\usepackage{amsmath,amssymb,siunitx,layaureo,graphicx,hyperref}
 
 \sisetup{per-mode=symbol,
   inter-unit-separator={}\cdot{},
@@ -15,7 +15,7 @@
 
 \newcommand{\figura}[1]{
   \begin{figure}[h!]
-    \includegraphics[height=10pt]{Immagini/#1}
+    \includegraphics[height=12pt]{Immagini/#1}
   \end{figure}
 }
 
@@ -100,7 +100,7 @@ oscura con diverse tecniche, delle quali non avremo il tempo di parlare:
 \end{itemize}
 
 Su cosa sia realmente l'energia oscura al momento ci sono solo speculazioni. Le
-due ipotesi più valide sono quelle della costante cosmologica e della
+due ipotesi più diffuse sono quelle della costante cosmologica e della
 quintessenza. Esistono anche altre ipotesi alternative che spesso finiscono con
 il coincidere con la quintessenza oppure non sono compatibili con le
 osservazioni.
@@ -114,11 +114,10 @@ che la cosmologia di Newtonia è rigorosa quanto (e più generale di) quella di
 Friedmann. Vedi Frank J. Tipler, ``Rigorous Newtonian cosmology'', in American
 Journal of Physics -- October 1996 -- Volume 64, Issue 10, pp. 1311-1315. DOI:
 \url{http://dx.doi.org/10.1119/1.18398}] In particolare l'energia oscura deriva
-da un modello cosmologico che presuppone il principio cosmologico: l'Universo è
-omogeneo (uguale in ogni suo punto) e isotropo (uguale in ogni
-direzione). Chiaramente questo non è valido sempre, ma sulle grandi scale
-astronomiche (decine o centinaia di Mpc e oltre), questa ipotesi vale con ottima
-approssimazione.
+da un modello che presuppone il principio cosmologico: l'Universo è omogeneo
+(uguale in ogni suo punto) e isotropo (uguale in ogni direzione). Chiaramente
+questo non è valido sempre, ma sulle grandi scale astronomiche (decine o
+centinaia di Mpc e oltre) questa ipotesi vale con buona approssimazione.
 
 Consideriamo un mezzo sferico, omogeneo e isotropo in espansione che ha densità
 $\rho$, raggio $r$ e massa $M = 4\pi\rho r^3/3$. Consideriamo inoltre una
@@ -133,17 +132,17 @@ assicura che $R$ dipenda solo dal tempo.]  Riarrangiando i termini
 dell'equazione dell'energia e ponendo $kc^2 = \dots$ otteniamo l'equazione di
 Friedmann $H^2 = \dots$. Il parametro $k$ non deve dipendere da $x$ perché
 nell'equazione nessun termine dipende da $x$ e deve essere preservata
-l'omogeneità e non dipende neanche dal tempo. L'omogeneità inoltre comporta che
-$U$ è costante per una fissata particella ma cambia, al variare di $x$, come
+l'omogeneità, $k$ non dipende neanche dal tempo. L'omogeneità inoltre comporta
+che $U$ è costante per una fissata particella ma cambia, al variare di $x$, come
 $x^2$. L'equazione di Friedmann non è covariante, non vale per qualsiasi cosa
 che si trovi nell'Universo, perché si basa sulla validità del principio
 cosmologico, quindi può essere applicato sulle grandi scale. Pertanto,
 l'espansione dell'Universo non significa che noi adesso ci stiamo espandendo
 perché l'espansione ha luogo solo se il moto degli oggetti è governato
 dall'effetto gravitazionale cumulativo di una distribuzione omogenea di materia
-fa di loro. Per esempio, gli atomi del nostro corpo obbediscono alle leggi della
-meccanica quantistica, la gravità è del tutto irrilevante per essi. Invece lo
-spazio che separa le galassie si sta espando portando esse con sé.
+fa di loro. Per esempio, gli atomi del nostro corpo sono soggette alle forze
+nucleari, la gravità è del tutto irrilevante per essi. Invece lo spazio che
+separa le galassie si sta espando portando esse con sé.
 
 Dalla prima legge della termodinamica [$dE + pdV = TdS$, si assume un'espansione
 reversibile a entropia costante $dS = 0$] si ricava l'equazione del fluido
@@ -162,51 +161,100 @@ Con il metodo da noi sviluppato non è evidente, ma con la teoria della
 Relatività Generale si può far vedere che il parametro $k$ che abbiamo
 introdotto descrive la curvatura dell'Universo. Senza energia oscura:
 \begin{itemize}
-\item Universo chiuso: collasserà su se stesso (Big Crunch);
+\item Universo chiuso: collasserà su se stesso (Big Crunch));
 \item Universo piatto: continuerà a espandesi indefinitamente;
 \item Universo aperto: esploderà (Big Rip).
 \end{itemize}
 
 Per giustificare l'accelerazione nell'espansione dell'Universo modifichiamo la
-forza di gravità aggiungendo un termine repulsivo del tipo forza di Hooke:
-$\Lambda \vec{r}/3$. [Il potenziale di questo termine va come $x^2$, come
+forza di gravità aggiungendo un termine repulsivo del tipo legge di Hooke:
+$\Lambda c^2\vec{r}/3$. [Il potenziale di questo termine va come $x^2$, come
 richiesto dall'ipotesi di omogeneità.] Ripetendo gli stessi calcoli di prima si
-ottiene l'equazione di Friedmann modificata $H^2 = \dots$. La costante
-cosmologica $\Lambda$ fu introdotta già da Einstein nel 1917 per provare a
-spiegare un Universo statico. Dovette però ritirarla quando si scoprì che
-l'Universo non era statico ma è in espansione, ammettendo di aver commesso il
-più grosso errore della sua vita.
+ottiene l'equazione di Friedmann modificata $H^2 = \dots$. Il termine aggiuntivo
+che ne risulta è la costante cosmologica che, in questo modello, descrive il
+comportamento dell'energia oscura. Possiamo riscrivere l'equazione nella stessa
+forma di prima includendo il termine della costante cosmologica in quello della
+pressione. La costante cosmologica $\Lambda$ fu introdotta già da Einstein nel
+1917 per provare a spiegare un Universo statico. Dovette però ritirarla quando
+si scoprì che l'Universo non era statico ma è in espansione, ammettendo di aver
+commesso il più grosso errore della sua vita.
 
 Possiamo immaginare l'Universo come riempito da un fluido. [Non è un'ipotesi
 solo semplificatrice: il moto delle stelle (?) è descritto dalla meccanica
 statistica, così come succede per il moto dei fluidi.] Questo fluido è composto
 da (almeno) tre componente e ha densità $\rho = \dots$ , con $\rho_m = \dots$
 (barioni (impropriamente): tutto ciò che fa parte del modello standard delle
-particelle; materia oscura: ciò che non fa parte del modello standard (anche se
-forse esiste materia oscura barionica). La materia è tutto ciò che tipicamente
-si muove non relativisticamente, l'energia cinetica è minore dell'energia a
-riposo, quindi non ha pressione (polvere)), $\rho_r = \dots$ (radiazione: cioè
-che si muove alla velocità della luce o quasi, quindi particelle prive di massa
-(fotoni) o quasi (neutrini, questi inoltre interagiscono scarsamente con la
-materia)) e $\rho_\Lambda = \dots$ (energia oscura).
+particelle (protoni + neutroni + elettroni); materia oscura: materia che non
+emette o diffonde radiazione elettromagnetica. La materia è tutto ciò che
+tipicamente si muove non relativisticamente, l'energia cinetica è minore
+dell'energia a riposo, quindi non ha pressione (polvere)), $\rho_r = \dots$
+(radiazione: cioè che si muove alla velocità della luce o quasi, quindi
+particelle prive di massa (fotoni) o quasi (neutrini, questi inoltre
+interagiscono scarsamente con la materia)) e $\rho_\Lambda = \dots$ (energia
+oscura). Notiamo che la densità di energia oscura è, in questo modello, costante
+se $\Lambda$ è costante.
 
 Come abbiamo già detto, per risolvere $\rho$ in funzione del tempo è necessario
 introdurre una relazione fra pressione e densità. Questa è data dall'equazione
-di stato che possiamo scrivere genericamente come $p_i = \dots$. Inserendo
+di stato che possiamo scrivere genericamente come $p_i = \dots$.  Inserendo
 questa relazione nell'equazione dei fluidi si trova che per ciascuna componente
 abbiamo $\rho_i = \dots$.
 
 Per la materia abbiamo già detto che $w = 0$, quindi $\rho \propto \dots$ come è
-normale attendersi per la materia comune. Per la radiazione si può dimostrare
-che si ha $w = 1/3$, quindi $\rho \propto \dots$. Infine, ponendo $w=-1$ per
-l'energia oscura abbiamo $\rho \text{ costante}$. La figura mostra, allo stato
-delle conoscenze attuali, l'andamento delle densità delle tre componenti nel
-corso del tempo a partire dal Big Bang. Inizialmente l'Universo era dominato
-dalla radiazione, ma dopo relativamente poco tempo la materia ha avuto il
-sopravvento (perché $\rho_m \propto 1/R^3$, $\rho_r \propto 1/R^4$), ma da circa
-5 miliardi di anni la densità di materia è inferiore a quella dell'energia
-oscura e quindi è iniziata l'accelerazione nell'espansione dell'Universo.
+normale attendersi poiché si la quantità di materia rimane costante nel
+tempo. Per la radiazione si può dimostrare che si ha $w = 1/3$, quindi
+$\rho \propto \dots$. Infine, ponendo $w=-1$ per l'energia oscura abbiamo
+$\rho \text{ costante}$. La figura mostra, allo stato delle conoscenze attuali,
+l'andamento delle densità delle tre componenti nel corso del tempo a partire dal
+Big Bang. Inizialmente l'Universo era dominato dalla radiazione, ma dopo
+relativamente poco tempo la materia ha avuto il sopravvento (perché
+$\rho_m \propto 1/R^3$, $\rho_r \propto 1/R^4$), ma da circa 5 miliardi di anni
+la densità di materia è inferiore a quella dell'energia oscura e quindi è
+iniziata l'accelerazione nell'espansione dell'Universo.
 \figura{evoluzione_densita}
+
+Si possono introdurre dei parametri adimensionali che rendono l'idea di quale
+sia la concentrazione delle varie componenti del fluido cosmologico. Se
+nell'equazione di Friedmann poniamo $k=0$ otteniamo la densità critica, ovvero
+la densità che deve possedere complessivamente il fluido cosmologico affinché la
+curvatura dell'Universo sia piatta. Allora per ogni componente del fluido
+definiamo il parametro di densità $\Omega_i = \dots$. Possiamo anche definire un
+parametro di densità associato alla curvatura $\Omega_k = \dots$, direttamente
+legato alla curvatura ($\Omega_k < 0 \implies k >0$, $\Omega_k = 0 \implies
+k=0$, $\Omega_k > 0 \implies k<0$) e che permette di riscrivere l'equazione di
+Friedmann in questo modo $\Omega + \Omega_k \equiv \dots$.
+
+Questi parametri di densità sono le grandezze che entrano nei modelli in base ai
+quali si effettuano i fit dei dati osservazionali e dei quali, dunque, si
+possono ottenere delle stime sperimentali. Questi che vediamo nella figura sono
+i limiti imposti dai risultati di esperimenti basati su alcune delle tecniche
+elencate precedentemente e vediamo che $\Omega_m \approx \num{0.3}$
+($\Omega_{\textup{b},0} \approx \num{0.05}$,
+$\Omega_{\textup{dm},0} \approx \num{0.25}$), $\Omega_r \approx \num{5e-5}$
+($\Omega_\nu \approx 0$) e $\Omega_\Lambda \approx \num{0.7}$. Quindi l'energia
+oscura domina l'Universo, come avevamo visto nel grafico a torna
+iniziale. Inoltre l'analisi della radiazione cosmica di fondo fornisce forti
+evidenze del fatto che $k=0$, cioè che la curvatura dell'Universo sia piatta.
+\figura{confcmbclust}
+
+La costante cosmologica ha densità costante in spazio e tempo. Se invece
+ammettiamo che possa variare poniamo
+$p_{\textup{Q}} = w_{\textup{Q}}\rho_{\textup{Q}}c^2$ con
+$w_{\textup{Q}} \neq 1$ e $w_{\textup{Q}} \lesssim -1/3$ affinché si abbia
+l'espansione accelerata (cioè $\ddot{R}>0$). [Per soddisfare questa condizione
+dobbiamo avere $p < -\rho c^2/3$, $\rho_\Lambda$ è solo una delle componenti di
+$\rho$, sebbene la più importante, per questo ho usato il simbolo $\lesssim$
+invece di $<$.] In questo caso l'energia oscura si chiama quintessenza. Allo
+stato delle conoscenze attuali non si sa se l'energia oscura si comporti come
+una costante cosmologica oppure la sua densità sia cambiata, seppure
+leggermente, nel corso del tempo.
+
+L'esistenza dell'energia oscura ha importanti conseguenze sul destino
+dell'Universo. Come abbiamo visto, adesso starebbe guidando un'accelerazione
+nell'espansione. Quale sarà il destino ultimo dell'Universo dipende fortemente
+dalle reali densità dei vari componenti del fluido cosmologico e dalla curvatura
+dell'Universo.
+\figura{500px-Friedmann_universes}
 
 \end{document}
 
