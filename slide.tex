@@ -32,12 +32,28 @@
   \frametitle{Supernove di tipo Ia}
   \begin{columns}
     \begin{column}{0.35\textwidth}
-      Derivano dall'esplosione di una nana bianca. Si distinguono dalle altre
-      supernove per la loro composizione chimica e sono caratterizzate da una
-      peculiare curva di luce che permette di stimarne la distanza.
+      Derivano dall'esplosione di una nana bianca e si distinguono dalle altre
+      supernove per la loro composizione chimica. Quando esplodono possiedono
+      tutte la stessa massa
+      ($m_{\textup{Ch}} \approx \SI{1.4}{\ensuremath{M_\odot}}$) quindi hanno
+      la stessa curva di luce.
     \end{column}
     \begin{column}{0.6\textwidth}
-      \includegraphics[width=\columnwidth]{fitting}
+      \includegraphics[width=\columnwidth]{curva_luce_supernova_Ia}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Supernove di tipo Ia (continua)}
+  \begin{columns}
+    \begin{column}{0.35\textwidth}
+      Nel 1998 sono state studiate supernove Ia meno luminose (quindi più
+      distanti) di quanto ci si aspettava da misure di redshift.
+    \end{column}
+    \begin{column}{0.6\textwidth}
+      % \includegraphics[width=\columnwidth]{fitting}
+      \includegraphics[width=\columnwidth]{dl}
     \end{column}
   \end{columns}
 \end{frame}
@@ -73,8 +89,8 @@
   \begin{align*}
     F &= \frac{GMm}{r^2} = \frac{4\pi G \rho r m}{3} \\
     V &= -\frac{GMm}{r} = -\frac{4\pi G \rho r^2 m}{3} \\
-    T &= \frac{1}{2}m\dot{r} \\
-    U &= T + V = \frac{1}{2}m\dot{r} - \frac{4\pi G \rho r^2 m}{3}
+    T &= \frac{1}{2}m\dot{r}^2 \\
+    U &= T + V = \frac{1}{2}m\dot{r}^2 - \frac{4\pi G \rho r^2 m}{3}
   \end{align*}
   Poniamo $\vec{r}(t) = R(t)\vec{x}$ e $kc^2 = -2U/mx^2$.
 \end{frame}
@@ -98,14 +114,14 @@
     \begin{equation*}
     \frac{\ddot{R}}{R} = -\frac{4\pi G}{3}\left( \rho + \frac{3p}{c^2} \right)
   \end{equation*}
-  \end{block}
-  Non tutte indipendenti.
+  Si ha accelerazione nell'espansione se $\ddot{R}>0$.
+\end{block}
 \end{frame}
 
 \begin{frame}
   \frametitle{Curvatura}
   Dalla Relatività Generale si ha che $k$ rappresenta la curvatura. Non dipende
-  dal tempo.
+  né dal tempo né da $x$.
   \begin{table}
     \centering
     \begin{tabular}{ccc}
@@ -125,7 +141,7 @@
   Le equazioni precedenti da sole \\
   non spiegano l'accelerazione nell'espansione. \\
   Aggiungiamo alla forza di gravità un termine \\
-  repulsivo del tipo legge di Hooke: $+\Lambda c^2\vec{r}/3$.
+  repulsivo del tipo legge di Hooke: $+\Lambda c^2r/3$.
   \begin{block}{Equazione di Friedmann modificata}
     \begin{equation*}
       H^2 = \frac{8\pi G}{3}\rho - \frac{kc^2}{R^2} + \frac{\Lambda c^2}{3}
@@ -243,7 +259,8 @@
   Dipende fortemente dalla reale densità di energia e materia oscure.
   \begin{figure}
     \centering
-    \includegraphics[width=0.7\columnwidth]{500px-Friedmann_universes}
+    % \includegraphics[width=0.7\columnwidth]{500px-Friedmann_universes}
+    \includegraphics[width=0.6\columnwidth]{990350b}
   \end{figure}
 \end{frame}
 
